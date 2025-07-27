@@ -21,10 +21,10 @@ public class Professor {
     @Column(nullable = false, length = 50)
     private String title;
 
-    @OneToMany(mappedBy = "professor")
+    @OneToMany(mappedBy = "professor",cascade = CascadeType.ALL)
     private List<Subject> subjects;
 
-    @ManyToMany(mappedBy = "professors")
+    @ManyToMany(mappedBy = "professors", cascade = CascadeType.ALL)
     private List<Student> students;
 
 }

@@ -38,4 +38,12 @@ public class Student {
 
     @OneToOne(mappedBy = "student")
     private AdmissionRecord admissionRecord;
+
+    public List<Professor> getProfessors() {
+        return professors;
+    }
+
+    public void setProfessors(List<Professor> professors) {
+        this.professors = professors;
+    }
 }
