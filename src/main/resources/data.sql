@@ -15,6 +15,11 @@ INSERT INTO subject (title) VALUES
 ('Database Systems'),
 ('Algorithms');
 
+INSERT INTO admission_record (fees, student_id) VALUES
+(50000, 1),
+(55000, 2),
+(60000, 3);
+
 INSERT INTO student_professor (student_id, professor_id) VALUES
 (1, 1),
 (1, 2),

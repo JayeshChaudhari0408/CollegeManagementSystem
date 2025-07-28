@@ -23,5 +23,11 @@ public class AdmissionRecord {
     @JoinColumn(name = "student_id")
     private Student student;
 
+    public Student getStudent() {
+        return student;
+    }
 
+    public void setStudent(Student student) {
+        this.student = student;
+    }
 }

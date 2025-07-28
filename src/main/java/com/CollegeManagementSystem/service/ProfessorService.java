@@ -71,8 +71,10 @@ public class ProfessorService {
 
         for(Subject subject1 : subjects) {
             subject1.setProfessor(professors);
+            professors.getSubjects().add(subject1);
         }
         subjectRepository.saveAll(subjects);
+        professorRepository.save(professors);
     }
 
     @Transactional
